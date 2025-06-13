@@ -1,0 +1,39 @@
+<style>
+  .tabs input {
+    display: none;
+  }
+
+  .tabs label {
+    padding: 10px;
+    display: inline-block;
+    background: #ccc;
+    cursor: pointer;
+  }
+
+  .tabs input:checked + label {
+    background: #1aadc0;
+    color: white;
+  }
+
+  .tab-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #cb30af;
+  }
+
+  #tab1:checked ~ #content1,
+  #tab2:checked ~ #content2 {
+    display: block;
+  }
+</style>
+
+<div class="tabs">
+  <input type="radio" name="tabs" id="tab1" checked>
+  <label for="tab1">Tab 1</label>
+
+  <input type="radio" name="tabs" id="tab2">
+  <label for="tab2">Tab 2</label>
+
+  <div id="content1" class="tab-content">random content 1</div>
+  <div id="content2" class="tab-content">random content 2</div>
+</div>

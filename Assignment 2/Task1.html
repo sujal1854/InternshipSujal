@@ -1,0 +1,29 @@
+<style>
+.pricing { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+.card { 
+    flex: 1; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    text-align: center; 
+}
+
+.pro { 
+    background: gold; 
+}
+
+@media (max-width: 600px) {
+  .pricing { 
+    flex-direction: column; 
+  }
+}
+</style>
+<div class="pricing">
+  <div class="card">Basic<br>Feature A<br>Feature B</div>
+  <div class="card pro">Pro<br>All Features<br>Support</div>
+  <div class="card">Enterprise<br>Custom<br>Priority</div>
+</div>
